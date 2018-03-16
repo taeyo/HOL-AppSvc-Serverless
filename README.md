@@ -38,13 +38,16 @@
 	- 실행 관련 이슈 트러블슈팅
     - Continous Deployment를 통한 자동 배포
 
+- 실습 2 : 간단한 ASP.NET Web App 구축 및 배포 (Visual Studio 사용)
+	https://docs.microsoft.com/en-us/azure/app-service-web/app-service-web-get-started-dotnet
+혹은
+
 - 실습 2 : Java WebApp(WAR) 배포 및 운영 실습 (30분)	 
 	- 참고 링크 : https://github.com/Azure-Samples/app-service-web-java-get-started	 
 	- 이미 만들어져 있는 WAR 파일을 App Service에 배포
 	- 온라인 에디터로 실시간 소스 수정
 	- SCM(Kudu)을 통해서 Web App의 내부 콘솔 살펴보기
 	- WebApp의 Authentication 기능을 이용한 보안 설정
-		- https://docs.microsoft.com/ko-kr/azure/app-service-mobile/app-service-mobile-how-to-configure-microsoft-authentication
 
 ### 기술 세션 : Azure의 Serverless 소개 (30분)
 
