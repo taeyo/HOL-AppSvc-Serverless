@@ -21,14 +21,14 @@
     - Resource group : rg-aspkr-bootcamp 선택
 4. Web App 만들기
     - Name : **aspkr-hol1-<전번4>**, 실습 1용
-    - Name : **aspkr-hol2-<전번4>**, 실습 2용
-    - App Service Plan : aspkr-BootCamp-Dev-Plan 선택
+    - Name : **aspkr-hol2-<전번4>**, 실습 2용     
+    - App Service Plan : aspkr-BootCamp-Dev-Plan 선택 
 5. Function App 만들기
     - Name : **aspkrFunc1<전번4자리>**
     - Resource group : rg-aspkr-bootcamp 선택
     - Hosting Plan : App Service Plan
-    - App Service Plan/Location : aspkr-BootCamp-Dev-Plan 선택
-    - Storage : aspkrholstor**** 선택
+    - App Service Plan/Location : aspkr-BootCamp-Dev-Plan 선택     
+    - Storage : aspkrholstor**** 선택
 6. Logic App 만들기
     - Name : FB-TTS-MAIL
 7. Face API 만들기
