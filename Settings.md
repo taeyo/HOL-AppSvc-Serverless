@@ -12,7 +12,7 @@
     - Name : **aspkr-BootCamp-Dev-Plan** 
     - Location : Southeast Asia      
     - Resource group : rg-aspkr-bootcamp 선택  
-    - OS : Windows   
+    - OS : Windows   
     - Pricing Tier : B1 Basic
 3. Storage account - blob, file, table, queue 만들기
     - Name : **aspkrholstor<전번4자리>** 
