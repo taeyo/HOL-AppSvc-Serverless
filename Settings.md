@@ -6,38 +6,42 @@
 
 
 1. 리소스 그룹(Resource Group) 만들기
-    - Name : **Aspnet-Hol-Serverless** 
-    - Location : japan west 
+    - Name : **rg-aspkr-bootcamp** 
+    - Location : Southeast Asia 
 2. App Service Plan 만들기
-    - Name : **ServerlessHol-dev** 
-    - Location : japan west
-    - Resource group : Aspnet-Hol-Serverless
-    - OS : Windows
+    - Name : **aspkr-BootCamp-Dev-Plan** 
+    - Location : Southeast Asia 
+    - Resource group : rg-aspkr-bootcamp 선택
+    - OS : Windows
     - Pricing Tier : B1 Basic
-3. Face API 만들기
+3. Storage account - blob, file, table, queue 만들기
+    - Name : **aspkrholstor<전번4자리>** 
+    - Replication : LRS
+    - Location : Southeast Asia 
+    - Resource group : rg-aspkr-bootcamp 선택
+4. Web App 만들기
+    - Name : **aspkr-hol1-<전번4>**, 실습 1용
+    - Name : **aspkr-hol2-<전번4>**, 실습 2용
+    - App Service Plan : aspkr-BootCamp-Dev-Plan 선택
+5. Function App 만들기
+    - Name : **aspkrFunc1<전번4자리>**
+    - Resource group : rg-aspkr-bootcamp 선택
+    - Hosting Plan : App Service Plan
+    - App Service Plan/Location : aspkr-BootCamp-Dev-Plan 선택
+    - Storage : aspkrholstor**** 선택
+6. Logic App 만들기
+    - Name : FB-TTS-MAIL
+7. Face API 만들기
     - Name : **FaceApi-dev** 
     - Location : West Us
     - Pricing Tier : F0
-    - Resource group : Aspnet-Hol-Serverless
-4. Storage account - blob, file, table, queue 만들기
-    - Name : **serverlessstor<전번4자리>** 
-    - Replication : LRS
-    - Location : japan west
-    - Resource group : Aspnet-Hol-Serverless
-    - Rest of all : use default value
-6. Function App 만들기
-    - Name : **SeverlessFunc<전번4자리>**
-    - Resource group : Aspnet-Hol-Serverless
-    - Hosting Plan : App Service Plan
-    - App Service Plan/Location : ServerlessHol-dev
-    - Storage : __serverlessstor__
-7. 저장소 계정 안에 Blob Container 만들기
+    - Resource group : rg-aspkr-bootcamp 선택
+8. 저장소 계정 안에 Blob Container 만들기
     - Name : **card-input**, **card-output**, **audio**
     - Public access level : Blob (anonymous read access for blobs only)  
-
     
 ### 실습 시작 전에 다음의 항목들을 [메모장]에 복사해 둡니다.
 
 > 시작 전에 복사해 둘 것
 >	- Storage Account 연결 문자열 설정
->	- Face API의 키 
+>	- Face API의 Endpoint와 Key 
